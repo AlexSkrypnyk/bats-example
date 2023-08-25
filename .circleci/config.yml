@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: drevops/circleci-bats-kcov:7b6614ac99e1568ac9a30dc31905ecb08a359d90
+      - image: drevops/circleci-bats-kcov:cdfa586770817c97ed29d9522d082c3a68d50f40
 
     steps:
     - checkout
