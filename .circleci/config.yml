@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: particleflux/circleci-bats-kcov:latest
+      - image: drevops/ci-builder:canary
 
     steps:
     - checkout
