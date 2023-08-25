@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: particleflux/circleci-bats-kcov:latest
+      - image: drevops/circleci-bats-kcov:7b6614ac99e1568ac9a30dc31905ecb08a359d90
 
     steps:
     - checkout
