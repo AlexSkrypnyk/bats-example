@@ -1,7 +1,7 @@
 # kcov-bats-circleci-codeclimate
 
-[![CircleCI](https://circleci.com/gh/particleflux/kcov-bats-circleci-codeclimate.svg?style=shield)](https://circleci.com/gh/particleflux/kcov-bats-circleci-codeclimate)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/da9822206885bc00d817/test_coverage)](https://codeclimate.com/github/particleflux/kcov-bats-circleci-codeclimate/test_coverage)
+[![CircleCI](https://circleci.com/gh/AlexSkrypnyk/kcov-bats-circleci-codeclimate.svg?style=shield)](https://circleci.com/gh/AlexSkrypnyk/kcov-bats-circleci-codeclimate)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ab0c58347db13c58058b/test_coverage)](https://codeclimate.com/github/AlexSkrypnyk/kcov-bats-circleci-codeclimate/test_coverage)
 
 A small example on how to set up [kcov] for gathering [bats] bash script test
 coverage in combination with [CircleCI] and [Code Climate]. 
