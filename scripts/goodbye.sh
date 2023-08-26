@@ -2,10 +2,10 @@
 
 if [[ "$1" == "world" ]]; then
   if [[ -n "$2" ]]; then
-    echo "Hello World $2"
+    echo "Goodbye World $2"
   else
-    echo "Hello World"
+    echo "Goodbye World"
   fi
 else
-  echo "Hello unknown"
+  echo "Goodbye unknown"
 fi

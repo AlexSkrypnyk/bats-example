@@ -1,11 +1,13 @@
 #!/usr/bin/env bats
 
 @test "hello without arguments" {
-    result=$(bash $BATS_TEST_DIRNAME/../hello.sh)
-    [[ "$result" == "Hello unknown" ]]
+    run "./hello.sh"
+    [[ "$status" -eq 0 ]]
+    [[ "$output" == "Hello unknown" ]]
 }
 
 @test "hello with world argument" {
-    result=$(bash $BATS_TEST_DIRNAME/../hello.sh world)
-    [[ "$result" == "Hello World" ]]
+    run "./hello.sh" "world"
+    [[ "$status" -eq 0 ]]
+    [[ "$output" == "Hello World" ]]
 }
