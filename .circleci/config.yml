@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: drevops/ci-builder:canary
+      - image: drevops/ci-builder:23.9.0
 
     steps:
     - checkout
@@ -27,7 +27,16 @@ jobs:
     - run:
         command: |
           /tmp/cc-test-reporter before-build
-          kcov --include-path=. coverage bats tests/
+                  
+          kcov \
+            --clean \
+            --include-pattern=.sh \
+            --bash-parse-files-in-dir=. \
+            --exclude-path=node_modules,vendor,coverage \
+            coverage \
+            bats \
+            tests
+                    
           xml="$(ls -1 coverage/bats*/cobertura.xml | head -1)"
 
           # removing trailing slash in cobertura <source>
